@@ -1,13 +1,13 @@
 import React from 'react';
 import { ContactsItem } from 'components/ContactsItem/ContactsItem';
 import { useSelector } from 'react-redux';
-import { getContacts } from 'redux/selectors';
-import { getFilter } from 'redux/selectors';
+import { getContacts,getFilter } from 'redux/contacts/selectors'; 
+
 // Стилі
 import { List } from './ContactsList.styled';
 // import { selectFilterContacts } from 'redux/selectors';
 
-const ContactsList = () => {
+export const ContactsList = () => {
   const contacts = useSelector(getContacts);
   const filter = useSelector(getFilter);
 
@@ -28,5 +28,3 @@ const ContactsList = () => {
     </List>
   );
 };
-
-export default ContactsList;

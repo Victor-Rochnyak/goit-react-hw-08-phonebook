@@ -1,6 +1,6 @@
 import { Item, Button } from './ContactsItem.styled';
 
-import { deleteContacts } from 'redux/operations';
+import { deleteContacts } from 'redux/contacts/operations';
 import { useDispatch } from 'react-redux';
 
 export const ContactsItem = ({ contact }) => {

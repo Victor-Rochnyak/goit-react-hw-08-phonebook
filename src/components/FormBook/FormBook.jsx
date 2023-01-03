@@ -6,8 +6,8 @@ import { Form, Label, Input, Button } from './FormBok.styled';
 
 import { useDispatch, useSelector } from 'react-redux';
 
-import { addContacts } from 'redux/operations';
-import { getContacts } from 'redux/selectors';
+import { addContacts } from 'redux/contacts/operations';
+import { selectAllContatcs } from 'redux/contacts/selectors';
 
 export default function FormBook() {
   const [name, setName] = useState('');
@@ -17,7 +17,7 @@ export default function FormBook() {
   const nameInputId = nanoid();
   const numberInputId = nanoid();
 
-  const contacts = useSelector(getContacts);
+  const contacts = useSelector(selectAllContatcs);
   const dispatch = useDispatch();
 
   const handleChange = event => {
