@@ -18,16 +18,15 @@ const contactSlice = createSlice({
     isLoading: false,
     error: null,
   },
+
   extraReducers: {
     [fetchContacts.pending]: handlePending,
     [addContacts.pending]: handlePending,
     [deleteContacts.pending]: handlePending,
-
     [fetchContacts.rejected]: handleRejected,
     [addContacts.rejected]: handleRejected,
     [deleteContacts.rejected]: handleRejected,
-
-    [fetchContacts.fulfilled]: (state, action) => {
+    [fetchContacts.fulfilled](state, action) {
       state.isLoading = false;
       state.error = null;
       state.contactItems = action.payload;
@@ -35,7 +34,7 @@ const contactSlice = createSlice({
     [addContacts.fulfilled](state, action) {
       state.isLoading = false;
       state.error = null;
-      state.contactItems.unshift(action.payload);
+      state.contactItems.push(action.payload);
     },
     [deleteContacts.fulfilled](state, action) {
       state.isLoading = false;
@@ -46,11 +45,44 @@ const contactSlice = createSlice({
       state.contactItems.splice(index, 1);
     },
     [logOut.fulfilled](state) {
-      state.items = [];
+      state.contactItems = [];
       state.error = null;
       state.isLoading = false;
     },
   },
+  // extraReducers: {
+  //   [fetchContacts.pending]: handlePending,
+  //   [addContacts.pending]: handlePending,
+  //   [deleteContacts.pending]: handlePending,
+
+  //   [fetchContacts.rejected]: handleRejected,
+  //   [addContacts.rejected]: handleRejected,
+  //   [deleteContacts.rejected]: handleRejected,
+
+  //   [fetchContacts.fulfilled]: (state, action) => {
+  //     state.isLoading = false;
+  //     state.error = null;
+  //     state.contactItems = action.payload;
+  //   },
+  //   [addContacts.fulfilled](state, action) {
+  //     state.isLoading = false;
+  //     state.error = null;
+  //     state.contactItems.unshift(action.payload);
+  //   },
+  //   [deleteContacts.fulfilled](state, action) {
+  //     state.isLoading = false;
+  //     state.error = null;
+  //     const index = state.contactItems.findIndex(
+  //       contact => contact.id === action.payload.id
+  //     );
+  //     state.contactItems.splice(index, 1);
+  //   },
+  //   [logOut.fulfilled](state) {
+  //     state.contactItems = [];
+  //     state.error = null;
+  //     state.isLoading = false;
+  //   },
+  // },
 });
 
 export const contactsReduser = contactSlice.reducer;

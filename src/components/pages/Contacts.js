@@ -14,13 +14,16 @@ export default function Contacts() {
   useEffect(() => {
     dispatch(fetchContacts());
   }, [dispatch]);
-
+ 
   return (
     <div>
       <title>Your Contacts</title>
       <FormBook />
       <FilterContacts />
-      {isLoading && <ContactsList />}
+      {isLoading || <ContactsList />}
+      
     </div>
+    
   );
+  
 }

@@ -10,7 +10,7 @@ import { List } from './ContactsList.styled';
 export const ContactsList = () => {
   const contacts = useSelector(getContacts);
   const filter = useSelector(getFilter);
-
+  
   const getFindContacts = () => {
     const normalizedFilter = filter.toLowerCase();
     return contacts.filter(contact =>
