@@ -4,15 +4,16 @@ export const List = styled.ul`
   display: flex;
   flex-direction: column;
   padding: 5px;
-  overflow-x: hidden;
   max-height: 367px;
   overflow-y: auto;
+  box-shadow: inset 5px 5px 10px #d1cdc7, inset -2.5px -2.5px 5px #ffffff;
+  border-radius: 5px;
 `;
 
 export const Item = styled.li`
   display: flex;
   justify-content: space-between;
-  background-color: #2ad8b2;
+  background-color: #d89b2a;
   margin-bottom: 15px;
   padding: 15px;
   border-radius: 5px;

@@ -20,7 +20,7 @@ const FilterContacts = () => {
         name={filter}
         value={filter}
         onChange={onChange}
-        placeholder="Find contacts by name"
+        placeholder="Find contacts"
       />
     </Label>
   );

@@ -23,12 +23,13 @@ export const Input = styled.input`
   outline: none;
   &::placeholder {
     text-align: start;
+    color: #c24712;
   }
 `;
 
 export const Button = styled.button`
   border-radius: 5px;
-  border: 1px solid rgba(14, 185, 190, 0.925);
+  border: 1px solid rgba(14, 46, 190, 0.925);
   transition: all 250ms ease 0s;
   &:hover {
     cursor: pointer;

@@ -13,12 +13,13 @@ export const Input = styled.input`
   border-left: none;
   border-right: none;
   border-image: initial;
-  border-bottom: 2px solid rgb(34, 145, 135);
+  border-bottom: 2px solid rgb(22, 69, 197);
   outline: none;
   /* text-align: center; */
 
   ::placeholder {
-    text-align: center;
+    text-align: start;
+    color: #c24712;
   }
 `;
 
