@@ -1,10 +1,8 @@
 // import styled from '@emotion/styled';
 import styled from 'styled-components';
-export const Form = styled.form``;
-
-export const LabelLogin = styled.label``;
 
 export const Input = styled.input`
+
   border-radius: 5px;
   background: #ecf0f3;
   padding: 10px;
@@ -23,29 +21,28 @@ export const Input = styled.input`
   box-shadow: inset 5px 5px 10px #d1cdc7, inset -2.5px -2.5px 5px #ffffff;
   &:hover {
     background: #f2f2f2;
+   
   }
   &:focus {
     background: #fff;
+    
   }
 `;
-
-export const ButtonLogout = styled.button`
+export const Button = styled.button`
   width: 215px;
   height: 35px;
   border-radius: 25px;
   color: #fafafa;
   border: none;
   font-size: 1em;
-  margin: 5px;
+  margin: 5px ;
   background: #f1895c;
   box-shadow: 5px 5px 10px #d1cdc7, -5px -5px 10px #ffffff;
   &:hover {
     background: #e37c4f;
-    transition: background-color 250ms ease-out;
   }
   &:active {
     background: #f1895c;
     box-shadow: inset 7px 7px 38px #e37c4f, inset -7px -7px 38px #ffa076;
-    transition: background-color 250ms ease-out;
   }
 `;

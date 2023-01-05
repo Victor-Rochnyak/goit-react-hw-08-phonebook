@@ -1,9 +1,14 @@
-import styled from "@emotion/styled";
+// import styled from "@emotion/styled";
+import styled from 'styled-components';
 
 export const HomePageBox = styled.div`
-transform: translateY(84px);
+
+margin-top: 100px;
 display: flex;
+flex-direction: column;
 color: #000000;
+text-align: center;
+align-items: center;
 `;
 
 export const Img = styled.img`

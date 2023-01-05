@@ -1,5 +1,5 @@
-import styled from '@emotion/styled';
-
+// import styled from '@emotion/styled';
+import styled from 'styled-components';
 export const SectionDiv = styled.div`
   position: relative;
     height: 600px;
@@ -8,10 +8,10 @@ export const SectionDiv = styled.div`
     background: #eeeeee;
     box-shadow: 11px 11px 22px #b3b3b3, -11px -11px 22px #ffffff;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: flex-start; */
+    /* align-items: center; */
     padding: 15px;
 `;
 
