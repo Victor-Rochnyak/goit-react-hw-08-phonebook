@@ -6,3 +6,7 @@ display: flex;
 color: #000000;
 `;
 
+export const Img = styled.img`
+width: 100px;
+height: 100px;
+`;
