@@ -13,7 +13,7 @@ import { useAuth } from 'Hooks/useAuth';
 import { Layout } from 'components/Layout/Layout';
 
 
-const HomePage = lazy(() => import('../pages/Home'));
+const HomePage = lazy(() => import('../pages/Home/Home'));
 const RegisterPage = lazy(() => import('../pages/Register'));
 const LoginPage = lazy(() => import('../pages/Login'));
 const ContactsPage = lazy(() => import('../pages/Contacts'));

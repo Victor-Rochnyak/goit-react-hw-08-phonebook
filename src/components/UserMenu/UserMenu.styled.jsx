@@ -5,7 +5,7 @@ export const UserMenuBox = styled.div`
 `;
 
 export const Salut = styled.p`
-  color: white;
+  color: #1b1919;
   margin-right: 5px;
 `;
 
@@ -15,7 +15,7 @@ export const BtnLogOut = styled.button`
   background-color: transparent;
   border: none;
   cursor: pointer;
-  color: white;
+  color: #a12424;
   transition: color 300ms ease-out;
   :hover {
     color: #001a1e;

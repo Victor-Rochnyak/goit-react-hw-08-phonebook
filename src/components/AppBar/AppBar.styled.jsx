@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const AppBarBox = styled.header`
   position: relative;
@@ -6,8 +6,16 @@ export const AppBarBox = styled.header`
   margin-bottom: 5px;
   display: flex;
   justify-content: space-between;
+
+  /* height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; */
+
   ::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     bottom: 0;
