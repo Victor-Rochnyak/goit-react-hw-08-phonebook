@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[928],{7928:function(e,n,t){t.r(n),t.d(n,{default:function(){return a}});var o,r,s=t(168),c=t(4934),h=c.Z.div(o||(o=(0,s.Z)(["\ntransform: translateY(84px);\ndisplay: flex;\ncolor: #000000;\n"]))),i=c.Z.img(r||(r=(0,s.Z)(["\nwidth: 100px;\nheight: 100px;\n"]))),l=t(184);function a(){return(0,l.jsxs)(h,{children:[(0,l.jsx)(i,{src:"https://img.logoipsum.com/245.svg"}),(0,l.jsx)("h1",{children:"Welcome to Phonebook"})]})}}}]);
-//# sourceMappingURL=928.cccc48da.chunk.js.map
