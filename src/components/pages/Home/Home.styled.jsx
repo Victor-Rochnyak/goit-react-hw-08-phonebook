@@ -15,3 +15,8 @@ export const Img = styled.img`
 width: 100px;
 height: 100px;
 `;
+
+export const H1 = styled.h1`
+font-weight: 300;
+font-family:'Ubuntu' ;
+`;

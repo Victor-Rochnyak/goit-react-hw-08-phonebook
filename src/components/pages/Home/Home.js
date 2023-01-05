@@ -1,12 +1,12 @@
-import { HomePageBox,Img } from './Home.styled';
+import { HomePageBox,Img,H1 } from './Home.styled';
 
 export default function Home() {
   return (
     <HomePageBox>
       <Img src="https://img.logoipsum.com/245.svg" />
-      <h1>
+      <H1>
         Welcome to Phonebook
-      </h1>
+      </H1>
       
     </HomePageBox>
   );

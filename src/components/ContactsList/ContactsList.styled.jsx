@@ -3,6 +3,10 @@ import styled from 'styled-components';
 export const List = styled.ul`
   display: flex;
   flex-direction: column;
+  padding: 5px;
+  overflow-x: hidden;
+  max-height: 367px;
+  overflow-y: auto;
 `;
 
 export const Item = styled.li`

@@ -7,6 +7,7 @@ import FilterContacts from 'components/FilterContacts/FilterContacts';
 import { fetchContacts } from 'redux/contacts/operations';
 import { getIsLoading } from 'redux/contacts/selectors';
 
+import { Div } from './Contacts.styled';
 export default function Contacts() {
   const dispatch = useDispatch();
   const isLoading = useSelector(getIsLoading);
@@ -14,16 +15,13 @@ export default function Contacts() {
   useEffect(() => {
     dispatch(fetchContacts());
   }, [dispatch]);
- 
+
   return (
-    <div>
+    <Div>
       <title>Your Contacts</title>
       <FormBook />
       <FilterContacts />
       {isLoading || <ContactsList />}
-      
-    </div>
-    
+    </Div>
   );
-  
 }

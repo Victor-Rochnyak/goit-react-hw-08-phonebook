@@ -5,6 +5,16 @@ import { NavLink } from 'react-router-dom';
 export const AuthLink = styled(NavLink)`
   color: black;
   text-decoration: none;
+  
+  &.active {
+  
+    color: ${p => p.theme.colors.muted};
+  }
+  :hover:not(.active),
+  :focus-visible:not(.active) {
+    color: ${p => p.theme.colors.muted};
+    
+  }
 `;
 export const Navigation = styled.div`
   display: flex;
