@@ -8,6 +8,21 @@ export const List = styled.ul`
   overflow-y: auto;
   box-shadow: inset 5px 5px 10px #d1cdc7, inset -2.5px -2.5px 5px #ffffff;
   border-radius: 5px;
+
+  
+/* https://www.8host.com/blog/stilizaciya-polosy-prokrutki-v-css/ */
+  ::-webkit-scrollbar {
+    width: 8px; /* ширина всей полосы прокрутки */
+  }
+  ::-webkit-scrollbar-track {
+    background: #e9e9e9; /* цвет зоны отслеживания */
+    border-radius: 20px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #f1895c; /* цвет бегунка */
+    border-radius: 20px; /* округлось бегунка */
+    border: 1px solid #000000b9; //отступ вокруг бегунка
+  }
 `;
 
 export const Item = styled.li`

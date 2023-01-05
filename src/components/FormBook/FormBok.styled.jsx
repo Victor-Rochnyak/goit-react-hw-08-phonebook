@@ -29,7 +29,7 @@ export const Input = styled.input`
 
 export const Button = styled.button`
   border-radius: 5px;
-  border: 1px solid rgba(14, 46, 190, 0.925);
+  border: 1px solid #f1895c;
   transition: all 250ms ease 0s;
   &:hover {
     cursor: pointer;
@@ -39,5 +39,6 @@ export const Button = styled.button`
       rgb(23 145 128) 0%,
       rgb(59 207 70) 100%
     );
+    transition: all 250ms ease 0s;
   }
 `;
