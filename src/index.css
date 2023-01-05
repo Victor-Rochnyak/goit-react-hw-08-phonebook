@@ -49,15 +49,16 @@ img {
   height: 100vh;
 }
 
+/*  
 .app {
-  /* display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background: #eee; */
+  background: #eee;
   .login-form {
-    /* position: relative;
+    position: relative;
     height: 600px;
     width: 400px;
     border-radius: 20px;
@@ -67,10 +68,10 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center; */
+    align-items: center;
 
     .indent-a {
-      /* position: absolute;
+      position: absolute;
       bottom: -300px;
       left: -100px;
       right: 0;
@@ -78,25 +79,25 @@ img {
       width: 400px;
       border-radius: 50%;
       background: #eee;
-      box-shadow: inset 5px 5px 10px #d1cdc7, inset -5px -5px 10px #ffffff; */
+      box-shadow: inset 5px 5px 10px #d1cdc7, inset -5px -5px 10px #ffffff;
     }
     .indent-b {
-      /* position: absolute;
+      position: absolute;
       top: -300px;
       right: -200px;
       height: 400px;
       width: 400px;
       border-radius: 50%;
       background: #eee;
-      box-shadow: inset 5px 5px 10px #d1cdc7, inset -5px -5px 10px #ffffff; */
+      box-shadow: inset 5px 5px 10px #d1cdc7, inset -5px -5px 10px #ffffff;
     }
     .form-header {
-      /* height: 45%;
+      height: 45%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      flex-wrap: wrap; */
+      flex-wrap: wrap;
 
 
       .logo-wrapper {
@@ -165,3 +166,5 @@ img {
     }
   }
 }
+
+*/
