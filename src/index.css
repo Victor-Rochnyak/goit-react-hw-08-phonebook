@@ -2,13 +2,12 @@
 
 html,
 body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 400px;
 
   width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
 
   padding: 0;
   height: 100vh;
